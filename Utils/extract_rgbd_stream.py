@@ -24,7 +24,7 @@ def extract_one_folder( data_dir, verbose=False ):
     safe_mkdir( output_path )
     cmd = "python %s --filename %s --output_path %s" % ( script_path, sens_path, output_path )
     print( "\nrunning: %s" % ( cmd ) )
-    # os.system( cmd )
+    os.system( cmd )
     print( "done: %s" % ( output_path ) )
 
 # -----------------------------------------------------------------------------

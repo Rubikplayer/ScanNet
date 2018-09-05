@@ -30,7 +30,7 @@ def unzip_one_folder( data_dir, verbose=False ):
         target_dir = join( dst_dir, folder_name )
 
         if not exists( target_dir ):
-            # os.system( "unzip -qq -o %s -d %s" % ( file_path, dst_dir ) )
+            os.system( "unzip -qq -o %s -d %s" % ( file_path, dst_dir ) )
             if verbose:
                 print( '\nunzipped %s' % ( file_path ) )
                 print( '      to %s' % ( dst_dir ) )
